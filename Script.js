@@ -42,13 +42,14 @@ console.log("***Area of triangle***");
  let h=30;
 function areaoftri(b,h)
 {
-	
+	console.log("base is 10");
+	console.log("height is 30");
 	return(b*h*0.5);
 	
 	
 }
  let tri=areaoftri(b,h);
- console.log(tri);
+ console.log("area is "+ tri);
 
  //****** Workout 3******
 function detailsform()
