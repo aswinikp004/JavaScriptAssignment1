@@ -38,14 +38,19 @@ while(i<10)
 //**** b) Area of triangle ***
 
 console.log("***Area of triangle***");
-function areaoftri()
+ let b=10;
+ let h=30;
+function areaoftri(b,h)
 {
-	let b=10;
-	let h=30;
-	let area= 1/2*b*h;
-	console.log(area);
+	
+	return(b*h*0.5);
+	
+	
 }
+ let tri=areaoftri(b,h);
+ console.log(tri);
 
+ //****** Workout 3******
 function detailsform()
 {
 	let name=document.getElementById("name");
