@@ -42,7 +42,7 @@ console.log(a = c = 7);
 //*****a) WHile loop *****
 console.log("***While loop***");
 let i=1;
-while(i<10)
+while(i<200)
 {
 	i+=2;
 	console.log(i);
