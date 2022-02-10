@@ -38,6 +38,7 @@ while(i<10)
 //**** b) Area of triangle ***
 
 console.log("***Area of triangle***");
+
  let b=10;
  let h=30;
 function areaoftri(b,h)
@@ -50,6 +51,39 @@ function areaoftri(b,h)
 }
  let tri=areaoftri(b,h);
  console.log("area is "+ tri);
+
+ //***** Arithmetic calculator*******
+ function caculator()
+ {
+	 let one= document.getElementById("num1").value;
+	 let oneVal= one;
+
+	 let two= document.getElementById("num2");
+	 let twoVal= two.value;
+
+	 let opr= document.getElementById("op");
+	 let opVal= opr.value;
+
+	 let result;
+	 if(opVal=="+")
+	 {
+       result= oneVal + twoVal;
+	 }
+	else(opVal=="-")
+	 {
+       result= oneVal - twoVal;
+	 }
+
+	 alert(result);
+	 
+
+ }
+
+  function add(num1,num2)
+  {
+	  let sum= num1=+num2;
+	  return sum;
+  }
 
  //****** Workout 3******
 function detailsform()
@@ -74,3 +108,18 @@ function detailsform()
 }
 
 
+
+	 /*let add= document.getElementById("add");
+	 let twoVal= add.value;
+
+	  let op; 
+	 switch(optwoVal)
+	 {
+		 case add:oneVal+twoVal;break;
+		 case m: oneVal-twoVal;break;
+		 case 1: oneVal*twoVal;break;
+		 case 1: aoneVal/twoVal;break;
+		 default:console.log("undefined");
+	 }
+
+	 document.write("1");*/
