@@ -53,25 +53,31 @@ function areaoftri(b,h)
  console.log("area is "+ tri);
 
  //***** Arithmetic calculator*******
- function caculator()
+ function calc()
  {
-	 let one= document.getElementById("num1").value;
-	 let oneVal= one;
-
-	 let two= document.getElementById("num2");
-	 let twoVal= two.value;
-
-	 let opr= document.getElementById("op");
-	 let opVal= opr.value;
-
-	 let result;
-	 if(opVal=="+")
+	 var one= parseInt(document.getElementById("num1").value);
+	 var two= parseInt(document.getElementById("num2").value);
+	 var opp= document.getElementById("op").value;
+	 var result;
+	 if(opp =="+")
 	 {
-       result= oneVal + twoVal;
+       result= one + two;
+	   //document.getElementById("res").innerHTML= + " Result: "+ result;
 	 }
-	else(opVal=="-")
+	 else if(opp =="-")
 	 {
-       result= oneVal - twoVal;
+       result= one - two;
+	  // document.getElementById("res").innerHTML= + " Result: "+ result;
+	 }
+	 else if(opp =="*")
+	 {
+       result= one * two;
+	   //document.getElementById("res").innerHTML= + " Result: "+ result;
+	 }
+	  else if(opp =="/")
+	 {
+       result= one / two;
+	   //document.getElementById("res").innerHTML= + " Result: "+ result;
 	 }
 
 	 alert(result);
@@ -79,12 +85,7 @@ function areaoftri(b,h)
 
  }
 
-  function add(num1,num2)
-  {
-	  let sum= num1=+num2;
-	  return sum;
-  }
-
+ 
  //****** Workout 3******
 function detailsform()
 {
