@@ -26,6 +26,18 @@ for(let i of obj2)
 	console.log(i);
 }
 
+//**** c)precedence of operators*****
+console.log("*** precedence of operators ****");
+console.log(6 + 5 * 5); // 6 + 25
+console.log(4 * 4 ** 2); // 4 * 16
+console.log(2 + 4 / 2); // 2 + 2
+console.log(2 + 4 * 2 / 2); // 2+ 8 / 2  ==>2+4=6
+let a;
+let c;
+
+console.log(a = c = 7);
+
+
 //****** Workout 2******
 //*****a) WHile loop *****
 console.log("***While loop***");
@@ -52,7 +64,7 @@ function areaoftri(b,h)
  let tri=areaoftri(b,h);
  console.log("area is "+ tri);
 
- //***** Arithmetic calculator*******
+ //***** c) Arithmetic calculator*******
  function calc()
  {
 	 var one= parseInt(document.getElementById("num1").value);
